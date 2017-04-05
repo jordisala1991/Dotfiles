@@ -9,7 +9,8 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
         ".aliases"
-        ".antigen_conf"
+        ".exports"
+        ".extra"
         ".gitconfig"
         ".zshrc"
     )
