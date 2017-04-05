@@ -1,2 +1,2 @@
-[ -f .alias ] && source .alias
+[ -f .aliases ] && source .aliases
 [ -f .antigen_conf ] && source .antigen_conf
