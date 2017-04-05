@@ -12,6 +12,7 @@ create_symlinks() {
         ".exports"
         ".extra"
         ".gitconfig"
+        ".gitignore"
         ".zshrc"
     )
 
