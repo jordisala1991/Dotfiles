@@ -8,9 +8,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
-        "zshrc"
         "alias"
         "antigen_conf"
+        "gitconfig"
+        "zshrc"
     )
 
     local i=""
