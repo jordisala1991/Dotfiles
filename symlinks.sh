@@ -9,11 +9,14 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
         ".aliases"
-        ".exports"
-        ".extra"
         ".gitconfig"
         ".gitignore"
         ".ssh/config"
+        ".zlogin"
+        ".zlogout"
+        ".zpreztorc"
+        ".zprofile"
+        ".zshenv"
         ".zshrc"
     )
 
