@@ -13,10 +13,11 @@ create_symlinks() {
         ".extra"
         ".gitconfig"
         ".gitignore"
+        ".ssh/config"
         ".zshrc"
     )
 
-    local i=""
+    local currentFile=""
     local sourceFile=""
     local targetFile=""
     local skipQuestions=false
@@ -28,9 +29,9 @@ create_symlinks() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    for i in "${FILES_TO_SYMLINK[@]}"; do
-        sourceFile="$(pwd)/$i"
-        targetFile="$HOME/$(printf "%s" "$i" | sed "s/.*\/\(.*\)/\1/g")"
+    for currentFile in "${FILES_TO_SYMLINK[@]}"; do
+        sourceFile="$(pwd)/$currentFile"
+        targetFile="$HOME/$currentFile"
 
         if [ ! -e "$targetFile" ] || $skipQuestions; then
             execute \
