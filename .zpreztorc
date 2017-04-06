@@ -1,16 +1,16 @@
 #!/usr/bin/env zsh
 
-# Color output (auto set to 'no' on dumb terminals).
-zstyle ':prezto:*:*' color 'yes'
-
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
   'directory' \
+  'spectrum' \
+  'utility' \
   'completion' \
   'prompt' \
   'syntax-highlighting'
 
 # Set the Prezto theme
+zstyle ':prezto:*:*' color 'yes'
 zstyle ':prezto:module:prompt' theme 'pure'
