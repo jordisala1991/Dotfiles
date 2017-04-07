@@ -7,9 +7,10 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'history' \
   'completion' \
-  'prompt' \
-  'syntax-highlighting'
+  'syntax-highlighting' \
+  'prompt'
 
 # Set the Prezto theme
 zstyle ':prezto:*:*' color 'yes'
