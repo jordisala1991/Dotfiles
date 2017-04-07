@@ -10,6 +10,7 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'completion' \
   'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 # Set the Prezto theme
