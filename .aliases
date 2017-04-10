@@ -4,5 +4,7 @@ alias s="git status -sb"
 alias a="git add -A"
 alias f="git fetch -p --all"
 alias gba="git branch -a"
+alias gbr='for k in `git branch -r | perl -pe "s/^..(.*?)( ->.*)?$/\1/"`; do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k -- | head -n 1`\\t$k; done | sort -r'
+alias t='git for-each-ref --format="%(color:green)%(refname:short) %(color:red)%(taggerdate:relative)" --sort="taggerdate" refs/tags'
 
 alias r!="exec zsh -l"

@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-# Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
@@ -13,6 +12,5 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'prompt'
 
-# Set the Prezto theme
 zstyle ':prezto:*:*' color 'yes'
 zstyle ':prezto:module:prompt' theme 'pure'
