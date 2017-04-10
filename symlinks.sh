@@ -9,6 +9,7 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
         ".aliases"
+        ".exports"
         ".gitconfig"
         ".gitignore"
         ".ssh/config"

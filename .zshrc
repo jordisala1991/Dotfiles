@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
-
-[ -r "${HOME}/.aliases" ] && [ -f "${HOME}/.aliases" ] && source "${HOME}/.aliases";
+[ -s "${HOME}/.exports" ] && \. "${HOME}/.exports";
+[ -s "${HOME}/.aliases" ] && \. "${HOME}/.aliases";
+[ -s "${HOME}/.zprezto/init.zsh" ] && \. "${HOME}/.zprezto/init.zsh";
+[ -s "${NVM_DIR}/nvm.sh" ] && \. "${NVM_DIR}/nvm.sh" --no-use;
