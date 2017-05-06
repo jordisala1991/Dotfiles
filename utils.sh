@@ -18,7 +18,6 @@ ask_for_confirmation() {
 }
 
 ask_for_sudo() {
-
     # Ask for the administrator password upfront.
 
     sudo -v &> /dev/null
@@ -33,7 +32,6 @@ ask_for_sudo() {
         sleep 60
         kill -0 "$$" || exit
     done &> /dev/null &
-
 }
 
 cmd_exists() {
@@ -41,18 +39,15 @@ cmd_exists() {
 }
 
 kill_all_subprocesses() {
-
     local i=""
 
     for i in $(jobs -p); do
         kill "$i"
         wait "$i" &> /dev/null
     done
-
 }
 
 execute() {
-
     local -r CMDS="$1"
     local -r MSG="${2:-$1}"
     local -r TMP_FILE="$(mktemp /tmp/XXXXX)"
@@ -107,7 +102,6 @@ execute() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     return $exitCode
-
 }
 
 get_answer() {
@@ -115,7 +109,6 @@ get_answer() {
 }
 
 get_os() {
-
     local os=""
     local kernelName=""
 
@@ -132,11 +125,9 @@ get_os() {
     fi
 
     printf "%s" "$os"
-
 }
 
 get_os_version() {
-
     local os=""
     local version=""
 
@@ -151,7 +142,6 @@ get_os_version() {
     fi
 
     printf "%s" "$version"
-
 }
 
 is_git_repository() {
@@ -159,7 +149,6 @@ is_git_repository() {
 }
 
 is_supported_version() {
-
     declare -a v1=(${1//./ })
     declare -a v2=(${2//./ })
     local i=""
@@ -184,7 +173,6 @@ is_supported_version() {
         fi
 
     done
-
 }
 
 mkd() {
@@ -239,7 +227,6 @@ print_question() {
 }
 
 print_result() {
-
     if [ "$1" -eq 0 ]; then
         print_success "$2"
     else
@@ -247,7 +234,6 @@ print_result() {
     fi
 
     return "$1"
-
 }
 
 print_success() {
@@ -259,14 +245,11 @@ print_warning() {
 }
 
 set_trap() {
-
     trap -p "$1" | grep "$2" &> /dev/null \
         || trap '$2' "$1"
-
 }
 
 skip_questions() {
-
      while :; do
         case $1 in
             -y|--yes) return 0;;
@@ -276,11 +259,9 @@ skip_questions() {
     done
 
     return 1
-
 }
 
 show_spinner() {
-
     local -r FRAMES='/-\|'
 
     # shellcheck disable=SC2034
@@ -347,5 +328,4 @@ show_spinner() {
         fi
 
     done
-
 }

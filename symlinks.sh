@@ -6,7 +6,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 create_symlinks() {
-
     declare -a FILES_TO_SYMLINK=(
         ".aliases"
         ".exports"
@@ -58,7 +57,6 @@ create_symlinks() {
             fi
         fi
     done
-
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
