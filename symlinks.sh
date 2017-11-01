@@ -12,6 +12,7 @@ create_symlinks() {
         ".gitconfig"
         ".gitignore"
         ".ssh/config"
+        ".vimrc"
         ".zlogin"
         ".zlogout"
         ".zpreztorc"
