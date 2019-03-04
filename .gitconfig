@@ -3,6 +3,5 @@
 [core]
     excludesfile = /.gitignore
 [user]
-    signingkey = 32E8E9BCED11EAE9
-    name = Jordi Sala Morales
+    name = Jordi
     email = jordism91@gmail.com
