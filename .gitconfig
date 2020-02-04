@@ -1,7 +1,7 @@
 [commit]
     gpgsign = true
 [core]
-    excludesfile = /.gitignore
+    excludesfile = ~/.gitignore
 [user]
     name = Jordi
     email = jordism91@gmail.com
