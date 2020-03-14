@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git pull origin master
-sh symlinks.sh
+. symlinks.bash
 
 pushd ${HOME}/.zprezto
 git pull && git submodule update --init --recursive
