@@ -8,3 +8,5 @@ alias f="git fetch -p --all"
 alias gba="git branch -a"
 alias gbr='for k in `git branch -r | perl -pe "s/^..(.*?)( ->.*)?$/\1/"`; do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k -- | head -n 1`\\t$k; done | sort -r'
 alias t='git for-each-ref --format="%(color:green)%(refname:short) %(color:red)%(taggerdate:relative)" --sort="taggerdate" refs/tags'
+
+dc() { docker-compose -f docker/docker-compose.yaml -f docker/docker-compose-dev.yaml --env-file docker/.env exec app /bin/bash -c "$*"; }
