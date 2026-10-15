@@ -8,6 +8,7 @@ macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 | `git`   | `.gitconfig` (SSH commit signing), global ignore |
 | `vim`   | Minimal `.vimrc`, no plugins |
 | `ssh`   | `.ssh/config` |
+| `mise`  | Global tool versions (node, python, pnpm, uv…) |
 
 ## Install
 

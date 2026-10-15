@@ -4,7 +4,7 @@ set -euo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-PACKAGES=(zsh git vim ssh)
+PACKAGES=(zsh git vim ssh mise)
 
 if ! command -v brew >/dev/null; then
     echo "Homebrew is required: https://brew.sh" >&2

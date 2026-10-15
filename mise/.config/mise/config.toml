@@ -1,0 +1,7 @@
+[tools]
+claude = "latest"
+node = "24"
+pi = "latest"
+pnpm = "latest"
+python = "3.14"
+uv = "latest"
