@@ -1,0 +1,3 @@
+alias s="git status -sb"
+alias a="git add -A"
+alias f="git fetch -p --all"
