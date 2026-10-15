@@ -9,6 +9,7 @@ macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 | `vim`   | Minimal `.vimrc`, no plugins |
 | `ssh`   | `.ssh/config` |
 | `mise`  | Global tool versions (node, python, pnpm, uv…) |
+| `claude`| Claude Code status line (model, context, branch, cost) |
 
 ## Install
 
