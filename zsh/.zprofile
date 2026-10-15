@@ -9,6 +9,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 export LESS='-F -g -i -M -R -S -w -X -z-4'
+export CLICOLOR=1
 export LANG="${LANG:-en_US.UTF-8}"
 
 [[ "$OSTYPE" == darwin* ]] && export BROWSER='open'
