@@ -23,9 +23,9 @@ root = "mise"
 
 [dotfile_groups.claude]
 root = "claude"
-exclude = ["settings.statusline.json"]
+exclude = ["settings.shared.json"]
 
 [dotfiles]
 "~/.ssh" = { permissions = "0700" }
-# Claude Code and Orca rewrite settings.json, so own only the statusLine key
-"~/.claude/settings.json/statusline" = { source = "claude/settings.statusline.json", merge = true }
+# Claude Code and Orca rewrite settings.json, so own only the keys in settings.shared.json
+"~/.claude/settings.json/shared" = { source = "claude/settings.shared.json", merge = true }

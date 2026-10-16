@@ -12,7 +12,7 @@ Personal macOS dotfiles, linked into `$HOME` with [mise dotfiles](https://mise.j
 
 ## Never version
 
-- `~/.claude/settings.json`: Claude Code and Orca rewrite it. A `merge` entry in `mise.toml` sets only the keys in `claude/settings.statusline.json` (the `statusLine`).
+- `~/.claude/settings.json`: Claude Code and Orca rewrite it. A `merge` entry in `mise.toml` sets only the keys in `claude/settings.shared.json` (`statusLine`, and `attribution` turned off so commits and PRs get no Claude trailer or footer).
 - `~/.config/gh/hosts.yml` (token), SSH keys, and other secrets.
 - Machine-specific overrides: `~/.zshrc.local`, `~/.gitconfig.local`, `~/.ssh/config.local`. The repo configs include them when present.
 
