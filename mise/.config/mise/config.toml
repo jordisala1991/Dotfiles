@@ -1,7 +1,9 @@
 [tools]
 claude = "latest"
+cmake = "latest"
 node = "24"
 pi = "latest"
 pnpm = "latest"
 python = "3.14"
 uv = "latest"
+zig = "0.17"
