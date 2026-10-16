@@ -1,7 +1,6 @@
 brew "git"
 brew "gh"
 brew "mise"
-brew "stow"
 brew "starship"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"

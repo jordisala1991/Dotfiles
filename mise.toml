@@ -1,0 +1,31 @@
+# Deploys the dotfiles into $HOME with `mise dot apply` (run by install.sh).
+# Each group is a package directory whose contents mirror their path under $HOME.
+
+[settings]
+dotfiles.root = "."
+
+# symlink-each (the default) links files, never whole directories,
+# so ~/.ssh and ~/.claude stay real directories outside the repo.
+[dotfile_groups.zsh]
+root = "zsh"
+
+[dotfile_groups.git]
+root = "git"
+
+[dotfile_groups.vim]
+root = "vim"
+
+[dotfile_groups.ssh]
+root = "ssh"
+
+[dotfile_groups.mise]
+root = "mise"
+
+[dotfile_groups.claude]
+root = "claude"
+exclude = ["settings.statusline.json"]
+
+[dotfiles]
+"~/.ssh" = { permissions = "0700" }
+# Claude Code and Orca rewrite settings.json, so own only the statusLine key
+"~/.claude/settings.json/statusline" = { source = "claude/settings.statusline.json", merge = true }

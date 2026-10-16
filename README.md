@@ -1,6 +1,6 @@
 # Dotfiles
 
-macOS dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
+macOS dotfiles linked into `$HOME` by [mise](https://mise.jdx.dev/dotfiles.html). Packages are declared in `mise.toml`.
 
 | Package | Contents |
 |---------|----------|
@@ -20,7 +20,12 @@ git clone https://github.com/jordisala1991/Dotfiles.git ~/Projects/Dotfiles
 ~/Projects/Dotfiles/install.sh
 ```
 
-Existing files are moved to `~/.dotfiles-backup/<timestamp>/` before linking.
+If a real file already exists where a link goes (for example a `~/.zprofile`
+written by the Homebrew installer), `mise dot apply` lists it and stops without
+changing anything. Keep it in the repo with `mise -C ~/Projects/Dotfiles dot add <file>`
+or delete it, then run `./install.sh` again. Afterwards `mise install` sets up
+the tools from the global mise config.
+
 To update, `git pull` and run `./install.sh` again.
 
 ## Machine-specific config
