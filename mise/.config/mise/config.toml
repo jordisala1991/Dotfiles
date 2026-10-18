@@ -9,3 +9,4 @@ ruby = "4.0"
 "gem:cocoapods" = "latest"
 uv = "latest"
 zig = "0.17"
+vercel = { version = "latest", allow_builds = ["esbuild"], trust_policy_excludes = ["undici"] }
