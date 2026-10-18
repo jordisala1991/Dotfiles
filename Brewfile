@@ -8,6 +8,8 @@ brew "zsh-history-substring-search"
 brew "jq"
 brew "mas"
 brew "mole"
+brew "libpq"  # psql, pg_dump, pg_restore without the server; keg-only, added to PATH in .zprofile
+brew "eas-cli"
 
 tap "shivammathur/php"
 brew "shivammathur/php/php"

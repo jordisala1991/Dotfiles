@@ -3,7 +3,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 typeset -gU path fpath
-path=("$HOME/.local/bin" $path)
+path=("$HOME/.local/bin" "$HOMEBREW_PREFIX/opt/libpq/bin" $path)
 
 export EDITOR='vim'
 export VISUAL='vim'
