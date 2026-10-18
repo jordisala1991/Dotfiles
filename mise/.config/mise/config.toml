@@ -12,3 +12,5 @@ zig = "0.17"
 vercel = { version = "latest", allow_builds = ["esbuild"], trust_policy_excludes = ["undici"] }
 "npm:eas-cli" = "latest"
 "npm:firebase-tools" = "latest"
+supabase = "latest"
+sentry-cli = "latest"
