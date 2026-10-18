@@ -15,6 +15,9 @@ brew "shivammathur/php/php"
 tap "stablyai/orca"
 cask "stablyai/orca/orca"  # not homebrew/cask's orca, which is Plotly's chart exporter
 
+tap "posthog/tap"
+brew "posthog/tap/posthog-cli"
+
 # Local AI (see ~/Projects/local-llm)
 tap "incoai/tap"
 tap "ddalcu/mlx-serve", "https://github.com/ddalcu/mlx-serve"  # without the URL brew looks for a repo that does not exist
