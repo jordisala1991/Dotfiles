@@ -1,6 +1,5 @@
 [tools]
 claude = "latest"
-cmake = "latest"
 node = "24"
 pi = "latest"
 pnpm = "latest"
