@@ -11,6 +11,11 @@ fi
 
 brew bundle --file=Brewfile
 
+# Machine-specific packages, not versioned
+if [[ -f "$HOME/.Brewfile.local" ]]; then
+    brew bundle --file="$HOME/.Brewfile.local"
+fi
+
 # mise reads the [dotfile_groups] in mise.toml only once the file is trusted
 mise trust --quiet "$PWD/mise.toml"
 

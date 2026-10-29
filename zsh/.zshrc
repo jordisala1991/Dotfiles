@@ -13,7 +13,8 @@ setopt AUTO_CD AUTO_PUSHD PUSHD_IGNORE_DUPS
 
 # Completion
 fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
-autoload -Uz compinit && compinit
+# -u: Homebrew may be shared through a group-writable prefix (e.g. owned by a separate admin user)
+autoload -Uz compinit && compinit -u
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' menu select
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'

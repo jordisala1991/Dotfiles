@@ -1,7 +1,6 @@
 [tools]
 claude = "latest"
 node = "24"
-pi = "latest"
 pnpm = "latest"
 python = "3.14"
 ruby = "4.0"
@@ -14,5 +13,4 @@ supabase = "latest"
 sentry-cli = "latest"
 cloudflare-cf = "1.0.0-beta.18"
 java = "temurin-21"
-maestro = "latest"
 android-cli = "1.1.16717390"
