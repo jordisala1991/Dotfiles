@@ -35,6 +35,8 @@ These files are loaded if present and are not versioned:
 - `~/.zshrc.local`
 - `~/.gitconfig.local` (e.g. a work `user.email`)
 - `~/.ssh/config.local`
+- `~/.Brewfile.local` (extra Homebrew packages, installed by `install.sh`)
+- `~/.config/mise/conf.d/*.toml` (extra mise tools, on top of the global config)
 
 ## Commit signing
 
