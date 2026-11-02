@@ -1,5 +1,4 @@
 brew "git"
-brew "gh"
 brew "mise"
 brew "starship"
 brew "zsh-autosuggestions"
