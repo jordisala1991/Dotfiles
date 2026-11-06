@@ -1,0 +1,3 @@
+# Skip the Node.js version: the mise shim is slow enough to trip command_timeout
+[nodejs]
+disabled = true
