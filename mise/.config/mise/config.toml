@@ -6,7 +6,7 @@ python = "3.14"
 ruby = "4.0"
 "gem:cocoapods" = "latest"
 uv = "latest"
-vercel = { version = "latest", allow_builds = ["esbuild"], trust_policy_excludes = ["undici"] }
+vercel = { version = "latest", allow_builds = ["esbuild"], trust_policy_excludes = ["undici", "vercel@>=58.5.1", "@vercel/*"] }
 "npm:eas-cli" = "latest"
 "npm:firebase-tools" = "latest"
 supabase = "latest"
